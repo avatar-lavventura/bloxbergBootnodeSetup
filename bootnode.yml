@@ -2,6 +2,7 @@ version: "3"
 services:
   bootnode:
     image: parity/parity:v2.7.2-stable
+    restart: always
     container_name: bootnode
     volumes:
       - ./bootnode:/home/parity/.local/share/io.parity.ethereum
